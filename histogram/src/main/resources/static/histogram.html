@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram.css">
+</head>
+<body>
+    <section>
+        <h1>Histogram Generator</h1>
+        <div class="container">
+            <div class="lower-bounds">
+                <h3>Lower bounds</h3>
+                <table class="bounds">
+                    <tr><td class="bounds-left">Max</td><td><input type="text" class="max-grade" value="100.00"></td></tr>
+                    <tr><td class="bounds-left">A+</td><td><input type="text" class="a-plus-grade" value="95.00"></td></tr>
+                    <tr><td class="bounds-left">A</td><td><input type="text" class="a-grade" value="90.00"></td></tr>
+                    <tr><td class="bounds-left">A-</td><td><input type="text" class="a-minus-grade" value="85.00"></td></tr>
+                    <tr><td class="bounds-left">B+</td><td><input type="text" class="b-plus-grade" value="80.00"></td></tr>
+                    <tr><td class="bounds-left">B</td><td><input type="text" class="b-grade" value="75.00"></td></tr>
+                    <tr><td class="bounds-left">B-</td><td><input type="text" class="b-minus-grade" value="70.00"></td></tr>
+                    <tr><td class="bounds-left">C+</td><td><input type="text" class="c-plus-grade" value="65.00"></td></tr>
+                    <tr><td class="bounds-left">C</td><td><input type="text" class="c-grade" value="60.00"></td></tr>
+                    <tr><td class="bounds-left">C-</td><td><input type="text" class="c-minus-grade" value="55.00"></td></tr>
+                    <tr><td class="bounds-left">D</td><td><input type="text" class="d-grade" value="50.00"></td></tr>
+                    <tr><td class="bounds-left">F</td><td><input type="text" class="f-grade" value="0.00"></td></tr>
+                </table>
+            </div>
+            <div class="container-2">
+                <div class="histogram">
+                    <h3>Histogram</h3>
+                    <table class="hist-table">
+                        <tr><td class="hist-left">A+</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">A</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">A-</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">B+</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">B</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">B-</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">C+</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">C</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">C-</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">D</td><td><div class="bar">0</div></td></tr>
+                        <tr><td class="hist-left">F</td><td><div class="bar">0</div></td></tr>
+                    </table>
+                </div>
+                <div class="new-grade">
+                    <form class="new-grade-container">
+                        New Grade: <input class="grade-input" type="text">
+                        <input class="button" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="calculate.js"></script>
+</body>
+</html>
